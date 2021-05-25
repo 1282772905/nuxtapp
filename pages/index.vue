@@ -24,11 +24,29 @@
         </a>
       </div>
     </div>
+    <nuxt-link to="/user">
+      user
+    </nuxt-link>
+
+    <nuxt-link to="/user/user">
+      user/user
+    </nuxt-link>
+    <div>{{ count }}</div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  async asyncData () {
+    console.log(process.server, 'aaaaaa')
+    const data = await 123
+    return { count: data }
+  },
+  mounted () {
+    this.$console('aaaaaaaaaaa')
+  }
+
+}
 </script>
 
 <style>
