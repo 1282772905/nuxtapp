@@ -1,7 +1,7 @@
 <template>
-  <div class="user">
-    <span class="inner">user</span>
-  </div>
+    <div class="user">
+        <span class="inner">user</span>
+    </div>
 </template>
 
 <script>
